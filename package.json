@@ -1,0 +1,30 @@
+{
+  "name": "ts-deployer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:container": "docker build -t ts-deployer .",
+    "container": "docker run -p 3000:3000 ts-deployer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ethereumjs-util": "^6.1.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@ganache/cli": "^0.10.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/web3": "^1.2.2",
+    "axios": "^1.6.8",
+    "ethereumjs-util": "^7.1.5",
+    "express": "^4.19.1",
+    "ganache-cli": "^6.12.2"
+  }
+}
