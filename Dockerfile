@@ -1,6 +1,9 @@
 # Use an official Node.js runtime as a parent image
 FROM node:16-alpine
 
+# Install dependencies for µWS
+RUN apt-get update && apt-get install -y libc6-compat g++ && rm -rf /var/lib/apt/lists/*
+
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
