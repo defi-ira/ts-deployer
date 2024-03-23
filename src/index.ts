@@ -3,6 +3,7 @@ import ganache from '@ganache/cli';
 import process from 'process';
 import Chain from './models/Chain';
 import { run_chain_interface } from './server';
+import { exec } from 'child_process';
 
 interface CommandLineOptions {
   port: number;

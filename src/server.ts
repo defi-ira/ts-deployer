@@ -12,8 +12,6 @@ export function run_chain_interface(chain: Chain) {
     const server = chain.server;
     const accounts = getInitialAccounts(chain);
 
-    console.log(accounts);
-
     app.use(bodyParser.json());
 
     // API to add a transaction
