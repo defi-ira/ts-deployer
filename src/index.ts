@@ -37,6 +37,13 @@ async function main() {
     // start the ganache server
     const server = ganache.server();
 
+    console.log("Starting Ganache Server on port 8545");
+
+    // run the server listener
+    server.listen(8545, () => {
+        console.log("Listening on port 8545");
+    });
+
     // generate server object
     const chain = new Chain(server, port, "127.0.0.1:" + port, []);
 

@@ -14,4 +14,6 @@ RUN tsc
 
 EXPOSE 3000
 
+EXPOSE 8545
+
 CMD ["node", "dist/index.js"]
